@@ -1,5 +1,6 @@
 # Proyecto Final IA
-Proyecto Final IA
+Proyecto Final IA;
+
 ##Integrantes:
 Miguel Angel Rico Llanos
 Maria Daniela Moreno Leon
