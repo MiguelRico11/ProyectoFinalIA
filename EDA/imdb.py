@@ -9,13 +9,13 @@ import os
 import joblib
 
 # ------------------------ 1. CARGA DE DATOS ------------------------
-print("📥 Descargando dataset desde Kaggle...")
+print("Descargando dataset desde Kaggle...")
 path = kagglehub.dataset_download("harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows")
 
 csv_files = [f for f in os.listdir(path) if f.endswith(".csv")]
 df = pd.read_csv(os.path.join(path, csv_files[0]))
 
-print(f"✅ Dataset cargado: {csv_files[0]} con {df.shape[0]} filas y {df.shape[1]} columnas\n")
+print(f"Dataset cargado: {csv_files[0]} con {df.shape[0]} filas y {df.shape[1]} columnas\n")
 
 # Limpieza básica
 df['Gross'] = df['Gross'].str.replace(',', '').astype(float)
@@ -109,7 +109,7 @@ sns.scatterplot(x=y_test, y=test_pred)
 plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linestyle='--')
 plt.xlabel('Valor Real de Gross')
 plt.ylabel('Valor Predicho de Gross')
-plt.title('🎯 Valor Real vs Valor Predicho (Test Set)')
+plt.title('Valor Real vs Valor Predicho (Test Set)')
 plt.grid(True)
 plt.tight_layout()
 plt.show()
@@ -120,7 +120,7 @@ feature_names = X.columns
 
 plt.figure(figsize=(8, 6))
 sns.barplot(x=importances, y=feature_names)
-plt.title('📊 Importancia de Características del Modelo')
+plt.title('Importancia de Características del Modelo')
 plt.xlabel('Importancia')
 plt.ylabel('Características')
 plt.tight_layout()
@@ -129,7 +129,7 @@ plt.show()
 # 7.3. Distribución de Gross
 plt.figure(figsize=(8, 6))
 sns.histplot(y, bins=30, kde=True)
-plt.title('📈 Distribución del Ingreso Bruto (Gross)')
+plt.title('Distribución del Ingreso Bruto (Gross)')
 plt.xlabel('Gross ($)')
 plt.ylabel('Frecuencia')
 plt.tight_layout()
