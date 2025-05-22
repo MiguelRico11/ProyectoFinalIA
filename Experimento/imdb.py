@@ -134,3 +134,10 @@ plt.xlabel('Gross ($)')
 plt.ylabel('Frecuencia')
 plt.tight_layout()
 plt.show()
+
+# ...existing code...
+
+# Guardar el DataFrame procesado
+processed_path = '../ml-project/data/processed/processed_dataset.csv'
+df.to_csv(processed_path, index=False)
+print(f"Datos procesados guardados en {processed_path}")
