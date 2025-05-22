@@ -60,4 +60,4 @@ nueva_scaled = scaler.transform(nueva_peli)
 clust_pred = kmeans.predict(nueva_scaled)[0]
 gross_aprox = cluster_summary.loc[cluster_summary['Cluster'] == clust_pred, 'mean'].values[0]
 
-print(f"\n🎯 La nueva película cae en el clúster {clust_pred} con un ingreso bruto promedio estimado de: ${gross_aprox:,.2f}")
+print(f"\n La nueva película cae en el clúster {clust_pred} con un ingreso bruto promedio estimado de: ${gross_aprox:,.2f}")
