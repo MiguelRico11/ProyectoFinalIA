@@ -1,6 +1,6 @@
 # Machine Learning Project
 
-Este proyecto de aprendizaje automático tiene como objetivo analizar un conjunto de datos y construir modelos predictivos utilizando algoritmos de clustering y árboles de decisión. A continuación se presenta una descripción general de la estructura del proyecto y los pasos realizados.
+Este proyecto de aprendizaje automático tiene como objetivo analizar un conjunto de datos de películas y series de Netflix para descubrir patrones y construir modelos predictivos utilizando algoritmos de clustering y árboles de decisión. El análisis incluye el preprocesamiento de datos, la exploración de variables relevantes como género, duración y clasificación, y la evaluación de modelos para tareas como segmentación de contenido y predicción de categorías.
 
 ## Estructura del Proyecto
 
